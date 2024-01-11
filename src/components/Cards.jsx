@@ -29,7 +29,7 @@ const Cards = ({ item }) => {
         email: user.email,
       }
       // console.log(cartItem);
-      fetch("http://localhost:6001/carts", {
+      fetch("https://shop-app-0kv8.onrender.com/carts", {
         method: "POST",
         headers:{
           "content-type": "application/json",
@@ -155,7 +155,7 @@ export default Cards;
 //     if(user && user.email){
 //         const cartItem = {menuItemId: _id, name, quantity : 1, image, price, email: user.email}
 
-//         axios.post('http://localhost:6001/carts', cartItem)
+//         axios.post('https://shop-app-0kv8.onrender.com/carts', cartItem)
 //         .then((response) => {
 //           console.log(response);
 //           if(response){

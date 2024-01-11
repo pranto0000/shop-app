@@ -19,7 +19,7 @@ const CartPage = () => {
   // // handleIncrease function
   // const handleIncrease = async (item) => {
   //   // console.log(item._id);
-  //   fetch(`http://localhost:6001/carts/${item._id}`, {
+  //   fetch(`https://shop-app-0kv8.onrender.com/carts/${item._id}`, {
   //     method: "PUT",
   //     headers: {
   //       "Content-Type": "application/json; charset=UTF-8",
@@ -48,7 +48,7 @@ const CartPage = () => {
   // const handleDecrease = (item) => {
   //   // console.log(item._id);
   //  if (item.quantity > 1) {
-  //   fetch(`http://localhost:6001/carts/${item._id}`, {
+  //   fetch(`https://shop-app-0kv8.onrender.com/carts/${item._id}`, {
   //     method: "PUT",
   //     headers: {
   //       "Content-Type": "application/json; charset=UTF-8",
@@ -95,7 +95,7 @@ const CartPage = () => {
   //     confirmButtonText: "Yes, delete it!",
   //   }).then((result) => {
   //     if (result.isConfirmed) {
-  //       fetch(`http://localhost:6001/carts/${item._id}`, {
+  //       fetch(`https://shop-app-0kv8.onrender.com/carts/${item._id}`, {
   //         method: "DELETE",
   //       })
   //         .then((res) => res.json())
@@ -118,7 +118,7 @@ const CartPage = () => {
    // Handle quantity increase
    const handleIncrease = async (item) => {
     try {
-      const response = await fetch(`http://localhost:6001/carts/${item._id}`, {
+      const response = await fetch(`https://shop-app-0kv8.onrender.com/carts/${item._id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -150,7 +150,7 @@ const CartPage = () => {
     if (item.quantity > 1) {
       try {
         const response = await fetch(
-          `http://localhost:6001/carts/${item._id}`,
+          `https://shop-app-0kv8.onrender.com/carts/${item._id}`,
           {
             method: "PUT",
             headers: {
@@ -202,7 +202,7 @@ const CartPage = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        axios.delete(`http://localhost:6001/carts/${item._id}`).then(response => {
+        axios.delete(`https://shop-app-0kv8.onrender.com/carts/${item._id}`).then(response => {
           if (response) {
             refetch();
              Swal.fire("Deleted!", "Your file has been deleted.", "success");
